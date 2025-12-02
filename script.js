@@ -1,6 +1,6 @@
 // 10 questions in Myanmar
 const QUESTIONS = [
-  { q: "ကွန်ပျူတာ၏ အဓိက Processing အဖွဲ့အစည်းကို ဘာဟုခေါ်သလဲ?", choices:["မော်နီတာ","CPU (ဦးနှောက်)","ကီးဘုတ်"], answer:2 }, 
+  { q: "ကွန်ပျူတာ၏ အဓိက Processing အဖွဲ့အစည်းကို ဘာဟုခေါ်သလဲ?", choices:["မော်နီတာ","CPU (ဦးနှောက်)","ကီးဘုတ်"], answer:0 }, 
   { q: "RAM ကို အောက်ပါအရာများထဲမှ ဘာအတွက် အသုံးပြုသလဲ?", choices:["တစ်ချိန်လျှင် သာ မှတ်သားသည့် ဒေတာများ သိမ်းဆည်းရန်","အမြဲတမ်း သိမ်းဆည်းရန်","ပုံနှိပ်ရန်"], answer:0 }
 ];
 
@@ -165,4 +165,5 @@ retryBtn.addEventListener('click', ()=>{
   resultScreen.style.display = 'none';
   startScreen.style.display = 'block';
   progEl.style.width = '0%';
+
 });
