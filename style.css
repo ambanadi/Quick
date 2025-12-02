@@ -1,0 +1,32 @@
+  /* Custom tweaks alongside Tailwind */
+    :root{--accent:#0b84ff;--dark:#0b1220}
+    body{background:linear-gradient(180deg,#f8fafc 0%, #eef2ff 100%);}
+    /* Fancy SVG wave header */
+    .hero{
+      background:linear-gradient(90deg,var(--dark),#0f1724);
+      color:white;
+      padding:36px 20px;
+      border-bottom-left-radius:48px;
+      border-bottom-right-radius:48px;
+      position:relative;
+      overflow:hidden;
+    }
+    .hero svg{position:absolute;right:-60px;top:-40px;opacity:0.12}
+
+    .card{
+      border-radius:18px;
+      box-shadow:0 8px 30px rgba(2,6,23,0.08);
+      border:1px solid rgba(7,18,28,0.04);
+    }
+
+    .choice{transition:all .18s ease;cursor:pointer}
+    .choice:hover{transform:translateY(-4px)}
+    .choice.disabled{pointer-events:none;opacity:0.92}
+    .choice.correct{background:rgba(16,185,129,0.12);border-color:rgba(16,185,129,0.18)}
+    .choice.wrong{background:rgba(239,68,68,0.08);border-color:rgba(239,68,68,0.18)}
+
+    /* Progress bar */
+    .progress-bg{background:#eef2ff;border-radius:999px}
+    .progress-fill{height:10px;background:linear-gradient(90deg,var(--accent),#6d28d9);border-radius:999px;width:0%}
+
+    @media (min-width:1024px){.container-lg{max-width:900px}}
